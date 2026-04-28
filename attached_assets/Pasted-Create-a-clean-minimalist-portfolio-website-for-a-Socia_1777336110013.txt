@@ -1,0 +1,102 @@
+Create a clean, minimalist portfolio website for a Social Media & Graphic Design Specialist.
+
+Style:
+- Modern, simple, professional, law-firm / agency portfolio feel
+- White or off-white background
+- Dark navy text
+- Subtle orange accent color
+- Lots of whitespace
+- No flashy animations
+- Mobile responsive
+- Use a clean sans-serif font like Inter, Poppins, or system font
+
+Site structure:
+
+1. Homepage / Landing Page
+- Hero section:
+  Name: Matteo De Leon
+  Title: Social Media & Graphic Design Specialist
+  Short intro:
+  "Social media design, carousel systems, localized campaign assets, and attorney-focused content for high-stakes service brands."
+- Button: View Work
+- Project grid with 5 portfolio pieces:
+  1. Litigation Awareness Carousel
+  2. Legal Tips Carousel
+  3. Multi-Market Localized Campaign
+  4. Reel Covers & Thumbnail System
+  5. Attorney Authority Quote System
+
+Each project card should include:
+- Large image thumbnail placeholder
+- Project title
+- 1 sentence description
+- Button: View Project
+
+2. Project Detail Pages
+Each project page should include:
+- Project title
+- Short context paragraph
+- A large hero image placeholder for the combined presentation board
+- A section titled "Carousel / Social Preview"
+- A video placeholder where I can upload/export my Canva carousel as an MP4
+- A section titled "Individual Assets"
+- Image placeholders stacked vertically for each individual slide/post
+- A short notes section:
+  Objective
+  Deliverables
+  Design Focus
+
+3. Content for each project:
+
+Project 1:
+Title: Litigation Awareness Carousel
+Description: A high-impact social carousel designed to communicate legal action with authority, urgency, and public awareness.
+Objective: Create a serious, readable carousel for a law-firm-style litigation campaign.
+Deliverables: 5-slide carousel, cover slide, quote slide, claim summary, accountability CTA.
+Design Focus: Legal tone, hierarchy, emotional restraint, high contrast.
+
+Project 2:
+Title: Legal Tips Carousel
+Description: A saveable educational carousel explaining what to do after a car accident.
+Objective: Turn practical legal guidance into clear, mobile-first content.
+Deliverables: 5-slide carousel, step-by-step guidance, CTA.
+Design Focus: Clarity, accessibility, readability, public education.
+
+Project 3:
+Title: Multi-Market Localized Campaign
+Description: A regional content system showing how one campaign can be adapted across San Diego, Sacramento, and Denver.
+Objective: Demonstrate consistent branding with localized visual and copy variations.
+Deliverables: 3 regional social posts.
+Design Focus: Localization, scalable templates, brand consistency.
+
+Project 4:
+Title: Reel Covers & Thumbnail System
+Description: A visual system for attorney-led short-form videos and social reels.
+Objective: Create scroll-stopping reel covers that support legal education and attorney content.
+Deliverables: 4 reel covers and 1 thumbnail system.
+Design Focus: Attention, readability, repeatable content structure.
+
+Project 5:
+Title: Attorney Authority Quote System
+Description: A quote and headshot-based content system designed to build trust and credibility.
+Objective: Support attorney thought leadership with clean, professional graphics.
+Deliverables: Quote cards, attorney insight posts, talking-head promo layouts.
+Design Focus: Trust, authority, simplicity, brand-safe design.
+
+4. About Section
+Include a short about paragraph:
+"I create social-first graphics that balance clarity, strategy, and visual consistency. My work focuses on content systems that can scale across campaigns, markets, and platforms while still feeling human and easy to understand."
+
+5. Contact Section
+Include:
+- Email placeholder
+- LinkedIn placeholder
+- Resume button placeholder
+
+Technical:
+- Build as a simple React website
+- Use clean reusable components
+- Make image and video areas easy to replace with my own files
+- Use placeholder boxes labeled "Upload image here" and "Upload video here"
+- Include smooth scrolling
+- Make it easy to deploy on Netlify
