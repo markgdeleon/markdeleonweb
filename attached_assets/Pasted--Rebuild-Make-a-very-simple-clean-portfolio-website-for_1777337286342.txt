@@ -1,0 +1,105 @@
+
+Rebuild. Make a very simple, clean portfolio website for a graphic designer.
+
+Overall style:
+- Minimal, clean, gallery-style portfolio
+- Inspired by simple artist/creative portfolio sites
+- White/off-white background
+- Dark charcoal or navy text
+- Subtle orange accent only for hover states or small details
+- Lots of whitespace
+- No heavy animations
+- Mobile responsive
+- The work should be the focus
+
+Fonts:
+- Use "Inter" for the main font
+- Use "Space Grotesk" for project titles/headings
+- Import from Google Fonts
+
+Site structure:
+
+1. Header
+- Left: MARK DE LEON
+- Right navigation: Work, About, Contact
+- Keep it simple and thin
+
+2. Homepage
+Hero text:
+"Social Media & Graphic Design"
+
+Small subtitle:
+"Content systems, social campaigns, and visual assets for clear, high-impact communication."
+
+Below hero:
+A clean grid of 5 project thumbnails.
+
+Projects:
+1. Litigation Awareness Carousel
+2. Legal Tips Carousel
+3. Multi-Market Localized Campaign
+4. Reel Covers & Thumbnail System
+5. Attorney Authority Quote System
+
+Each project card:
+- Image placeholder
+- Project title underneath
+- On hover: slight opacity change or subtle lift
+- Click opens a project detail page
+
+3. Project Detail Pages
+Keep each page extremely simple.
+
+At top:
+- Project title only
+- Optional one-line subtitle underneath
+
+Then show:
+- A large image placeholder for the combined board or cover image
+- A video placeholder labeled "Carousel Preview" where I can later upload a Canva MP4 export
+- A section titled "Assets"
+- Stack image placeholders vertically for individual carousel slides or social graphics
+
+No long case study text.
+No paragraphs unless included in the placeholder content.
+The carousel graphics themselves will carry the explanation.
+
+Project subtitles:
+1. Litigation Awareness Carousel
+   "A legal awareness carousel designed for clarity, urgency, and authority."
+
+2. Legal Tips Carousel
+   "A saveable educational carousel for post-accident guidance."
+
+3. Multi-Market Localized Campaign
+   "One campaign system adapted across multiple regional markets."
+
+4. Reel Covers & Thumbnail System
+   "Short-form legal content covers built for fast readability."
+
+5. Attorney Authority Quote System
+   "Attorney-focused graphics designed to build trust and credibility."
+
+4. About Page
+Keep it short:
+"Hi, I’m Mark. I design social-first graphics, content systems, and campaign assets that help brands communicate clearly and consistently."
+
+5. Contact Page
+Simple:
+- Email placeholder
+- LinkedIn placeholder
+- Resume button placeholder
+
+Technical requirements:
+- Use React
+- Use CSS modules or clean standard CSS
+- Make the site easy to edit
+- Use placeholder images that I can replace later
+- Create reusable components:
+  Header
+  ProjectCard
+  ProjectPage
+  MediaPlaceholder
+- Make it deployable to Netlify
+- Keep file structure clean and beginner-friendly
+

@@ -1,19 +1,11 @@
 import { useRoute, Link } from "wouter";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
+import { Header } from "@/components/Header";
+import { MediaPlaceholder } from "@/components/MediaPlaceholder";
 import { projects } from "@/data/projects";
 import NotFound from "@/pages/not-found";
 
-function ContentBox({ label, aspectRatio = "aspect-[16/9]" }: { label: string, aspectRatio?: string }) {
-  return (
-    <div className={`w-full ${aspectRatio} bg-muted/10 border border-dashed border-border flex items-center justify-center p-8 text-center`}>
-      <span className="text-sm font-medium text-muted-foreground/70 uppercase tracking-widest">{label}</span>
-    </div>
-  );
-}
-
 export default function ProjectDetail() {
-  const [match, params] = useRoute("/projects/:slug");
+  const [match, params] = useRoute("/work/:slug");
 
   if (!match || !params?.slug) {
     return <NotFound />;
@@ -27,65 +19,52 @@ export default function ProjectDetail() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+      <Header />
       
-      <main className="flex-1">
-        <article className="container mx-auto px-4 md:px-8 py-16 md:py-24 max-w-5xl">
-          <Link href="/" className="inline-flex items-center text-sm font-semibold text-muted-foreground hover:text-primary transition-colors mb-16 uppercase tracking-widest" data-testid="link-back">
-            ← Back to Work
-          </Link>
+      <main className="flex-1 container mx-auto px-4 md:px-8 py-16 md:py-24 max-w-5xl">
+        <Link 
+          href="/" 
+          className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors mb-16"
+          data-testid="link-back-home"
+        >
+          &larr; Work
+        </Link>
 
-          <header className="mb-20">
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-8" data-testid="text-project-title">
-              {project.title}
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl" data-testid="text-project-context">
-              {project.context}
-            </p>
-          </header>
+        <header className="mb-16">
+          <h1 className="font-display text-[clamp(2rem,5vw,4.5rem)] font-bold leading-tight tracking-tight mb-4">
+            {project.title}
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground">
+            {project.subtitle}
+          </p>
+        </header>
 
-          <div className="mb-24" data-testid="container-hero-image">
-            <ContentBox label="Presentation board — upload image here" />
+        <div className="mb-24">
+          <MediaPlaceholder label="[ Cover Board ]" aspectRatio="aspect-[16/9]" />
+        </div>
+
+        <section className="mb-24">
+          <h2 className="font-display text-sm font-bold uppercase tracking-widest text-muted-foreground mb-8">
+            Carousel Preview
+          </h2>
+          <MediaPlaceholder label="[ Upload MP4 ]" aspectRatio="aspect-[16/9]" dark />
+        </section>
+
+        <section>
+          <h2 className="font-display text-sm font-bold uppercase tracking-widest text-muted-foreground mb-8">
+            Assets
+          </h2>
+          <div className="flex flex-col gap-12">
+            {Array.from({ length: project.slideCount }).map((_, index) => (
+              <MediaPlaceholder 
+                key={index} 
+                label={`[ Slide ${index + 1} ]`} 
+                aspectRatio="aspect-[4/3]" 
+              />
+            ))}
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-32">
-            <div className="md:col-span-2 flex flex-col gap-12">
-              <section data-testid="section-carousel-preview">
-                <h3 className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-6">Carousel / Social Preview</h3>
-                <ContentBox label="Upload video here (Canva MP4 export)" aspectRatio="aspect-square md:aspect-[4/3]" />
-              </section>
-
-              <section data-testid="section-individual-assets">
-                <h3 className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-6">Individual Assets</h3>
-                <div className="flex flex-col gap-8">
-                  {[1, 2, 3, 4, 5].map(num => (
-                    <ContentBox key={num} label={`Upload image here — Slide ${num}`} aspectRatio="aspect-[4/5]" />
-                  ))}
-                </div>
-              </section>
-            </div>
-
-            <aside className="md:col-span-1">
-              <div className="sticky top-32 flex flex-col gap-10 bg-card p-8 border border-border">
-                <div data-testid="project-meta-objective">
-                  <h4 className="text-sm font-bold uppercase tracking-widest text-primary mb-3">Objective</h4>
-                  <p className="text-foreground leading-relaxed">{project.objective}</p>
-                </div>
-                <div data-testid="project-meta-deliverables">
-                  <h4 className="text-sm font-bold uppercase tracking-widest text-primary mb-3">Deliverables</h4>
-                  <p className="text-foreground leading-relaxed">{project.deliverables}</p>
-                </div>
-                <div data-testid="project-meta-design-focus">
-                  <h4 className="text-sm font-bold uppercase tracking-widest text-primary mb-3">Design Focus</h4>
-                  <p className="text-foreground leading-relaxed">{project.designFocus}</p>
-                </div>
-              </div>
-            </aside>
-          </div>
-        </article>
+        </section>
       </main>
-
-      <Footer />
     </div>
   );
 }
