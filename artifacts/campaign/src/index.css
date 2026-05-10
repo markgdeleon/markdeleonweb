@@ -1,85 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap');
-@import "tailwindcss";
-@import "tw-animate-css";
-@plugin "@tailwindcss/typography";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
 
-@custom-variant dark (&:is(.dark *));
-
-@theme inline {
-  --color-background: hsl(var(--background));
-  --color-foreground: hsl(var(--foreground));
-  --color-border: hsl(var(--border));
-  --color-input: hsl(var(--input));
-  --color-ring: hsl(var(--ring));
-
-  --color-primary: hsl(var(--primary));
-  --color-primary-foreground: hsl(var(--primary-foreground));
-
-  --color-muted: hsl(var(--muted));
-  --color-muted-foreground: hsl(var(--muted-foreground));
-
-  --font-sans: 'Inter', sans-serif;
-  --font-display: 'Barlow Condensed', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root {
-  --background: 0 0% 4%;
-  --foreground: 0 0% 95%;
-  --border: 0 0% 15%;
-  --input: 0 0% 15%;
-  --ring: 0 72% 45%;
-
-  --primary: 0 72% 45%;
-  --primary-foreground: 0 0% 95%;
-
-  --muted: 0 0% 15%;
-  --muted-foreground: 0 0% 60%;
+html, body, #root {
+  width: 100%;
+  height: 100%;
 }
 
-.dark {
-  --background: 0 0% 4%;
-  --foreground: 0 0% 95%;
-  --border: 0 0% 15%;
-  --input: 0 0% 15%;
-  --ring: 0 72% 45%;
-
-  --primary: 0 72% 45%;
-  --primary-foreground: 0 0% 95%;
-
-  --muted: 0 0% 15%;
-  --muted-foreground: 0 0% 60%;
+body {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  background: #0a1a0f;
+  color: #fff;
+  overflow: hidden;
 }
 
-@layer base {
-  * {
-    @apply border-border box-border;
-  }
-
-  html {
-    scroll-behavior: smooth;
-    cursor: none;
-  }
-
-  body {
-    @apply font-sans antialiased bg-background text-foreground overflow-x-hidden;
-    cursor: none;
-  }
-
-  a, button, [role="button"] {
-    cursor: none;
-  }
+.page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
-.noise-overlay {
-  position: fixed;
+.bg-image {
+  position: absolute;
   inset: 0;
-  pointer-events: none;
-  z-index: 50;
-  opacity: 0.05;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
-.text-outline {
-  -webkit-text-stroke: 1px hsl(var(--muted-foreground) / 0.5);
-  color: transparent;
+.overlay {
+  position: absolute;
+  inset: 0;
+  padding: clamp(16px, 3vw, 36px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* TOP ROW */
+.top-left,
+.top-right {
+  position: absolute;
+  top: clamp(16px, 3vw, 36px);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  font-size: clamp(9px, 1vw, 12px);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  line-height: 1.3;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.top-left  { left: clamp(16px, 3vw, 36px); }
+.top-right { right: clamp(16px, 3vw, 36px); text-align: right; }
+
+/* MIDDLE STRIP */
+.mid-strip {
+  position: absolute;
+  left: clamp(16px, 3vw, 36px);
+  right: clamp(16px, 3vw, 36px);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(10px, 2vw, 28px);
+  color: #fff;
+}
+
+.mid-label {
+  font-size: clamp(8px, 0.9vw, 11px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  white-space: nowrap;
+  line-height: 1.3;
+  padding-top: 2px;
+}
+
+.mid-item {
+  font-size: clamp(10px, 1.1vw, 13px);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.sep {
+  font-size: clamp(10px, 1.1vw, 13px);
+  opacity: 0.5;
+  padding-top: 1px;
+}
+
+/* BOTTOM ROW */
+.bottom-left,
+.bottom-right {
+  position: absolute;
+  bottom: clamp(16px, 3vw, 36px);
+  font-size: clamp(8px, 0.9vw, 11px);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.bottom-left {
+  left: clamp(16px, 3vw, 36px);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  line-height: 1.3;
+}
+
+.bottom-right {
+  right: clamp(16px, 3vw, 36px);
+}
+
+.bottom-right a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.12em;
+  opacity: 0.85;
+}
+
+.bottom-right a:hover {
+  opacity: 1;
 }
