@@ -1,4 +1,4 @@
-import posterImage from "@assets/Screenshot_2026-05-10_at_4.30.08_PM_1778456761454.png";
+import posterImage from "@assets/Nike_template_1778456338289.png";
 
 export default function App() {
   return (
@@ -14,17 +14,6 @@ export default function App() {
         <div className="top-right">
           <span>SOCIAL MEDIA</span>
           <span>GRAPHIC DESIGN</span>
-        </div>
-
-        <div className="mid-strip">
-          <span className="mid-label">A SELECTION OF</span>
-          <span className="mid-item">MARK DE LEON</span>
-          <span className="sep">/</span>
-          <span className="mid-item">CAMPAIGN<br />DIRECTION</span>
-          <span className="sep">/</span>
-          <span className="mid-item">CONTENT<br />SYSTEMS</span>
-          <span className="sep">/</span>
-          <span className="mid-item">BRAND<br />ASSETS</span>
         </div>
 
         <div className="bottom-left">
