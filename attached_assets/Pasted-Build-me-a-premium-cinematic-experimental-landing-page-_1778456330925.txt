@@ -1,0 +1,97 @@
+Build me a premium, cinematic, experimental landing page inspired by high-fashion sports campaigns and futuristic agency portfolios. The design language should feel like Nike x A24 x modern interactive art direction.
+
+CORE VISUAL STYLE:
+
+* Fullscreen hero layout
+* Dark cinematic atmosphere
+* Large distorted athlete portrait as centerpiece
+* Heavy use of glass refraction / slit-scan / ripple distortion effects
+* Smooth WebGL or shader-based image displacement
+* Vertical wave/glass slicing effect across the athlete image
+* Minimal typography
+* High contrast lighting
+* Editorial / luxury sports branding aesthetic
+* Moody gradients (deep blacks, crimson red, dark green, charcoal)
+* Clean spacing with premium feel
+* Feels like an interactive campaign microsite
+
+HERO SECTION:
+
+* Full viewport height
+* Athlete image centered
+* Image distortion reacts slightly to mouse movement
+* Subtle animated glass ripple continuously moving
+* Background should feel alive but minimal
+* No clutter
+* Add cinematic grain and soft vignette
+
+TYPOGRAPHY:
+
+* Use bold condensed sans-serif fonts
+* Modern Nike-style editorial typography
+* Minimal text:
+    * “BECOME”
+    * “MOTION”
+    * “NOISE”
+    * “HUMAN PERFORMANCE”
+* Typography should feel integrated into the composition, not like a normal website
+
+ANIMATION:
+
+* Smooth scroll
+* GSAP animations
+* Framer Motion transitions
+* Floating subtle parallax
+* Distortion should animate slowly even when idle
+* Mouse movement slightly shifts layers
+* Smooth fade reveals
+
+TECH STACK:
+
+* React + Vite
+* Tailwind CSS
+* Framer Motion
+* GSAP
+* Three.js or React Three Fiber for distortion effects
+* Shader-based ripple/glass displacement
+* Fully responsive
+* Optimized performance
+
+LAYOUT:
+
+* Minimal single-page experience
+* Hero section first
+* Followed by:
+    * Featured campaigns
+    * Athlete profiles
+    * Motion gallery
+    * Brand manifesto
+* Sections should transition seamlessly with cinematic pacing
+
+DESIGN REFERENCES:
+
+* Experimental fashion websites
+* Nike campaign pages
+* Immersive WebGL agency sites
+* Interactive art installations
+* High-end creative studio portfolios
+
+IMPORTANT:
+
+* Avoid generic startup UI
+* No SaaS look
+* No rounded pastel cards
+* No corporate dashboard aesthetics
+* Prioritize emotion, motion, atmosphere, and visual identity
+* The site should feel like a digital art piece, not a template
+
+BONUS:
+
+* Add subtle ambient audio toggle
+* Add loading screen with animated distortion
+* Include smooth page transitions
+* Add custom cursor
+* Add fullscreen menu overlay animation
+* Add dynamic lighting/shadow movement over the athlete image
+
+The final result should feel bold, immersive, futuristic, emotional, athletic, and cinematic.
