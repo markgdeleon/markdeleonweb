@@ -12,18 +12,9 @@ export default function App() {
         </div>
 
         <div className="top-right">
-          <span>SOCIAL MEDIA</span>
-          <span>GRAPHIC DESIGN</span>
-        </div>
-
-        <div className="bottom-left">
-          <span>05</span>
-          <span>THE</span>
-          <span>WORK</span>
-        </div>
-
-        <div className="bottom-right">
-          <a href="mailto:your@email.com" data-testid="link-email">CONTACT</a>
+          <a href="#work" data-testid="link-work">WORK</a>
+          <a href="#about" data-testid="link-about">ABOUT</a>
+          <a href="#contact" data-testid="link-contact">CONTACT</a>
         </div>
       </div>
     </div>
