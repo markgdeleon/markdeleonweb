@@ -13,8 +13,8 @@ html, body, #root {
 
 body {
   font-family: 'Space Grotesk', system-ui, sans-serif;
-  background: #080808;
-  color: #fff;
+  background: #f0ede8;
+  color: #111;
   overflow: hidden;
 }
 
@@ -33,7 +33,7 @@ body {
   justify-content: space-between;
   padding: 0 clamp(20px, 3.5vw, 52px);
   height: 56px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
 
@@ -42,7 +42,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #fff;
+  color: #111;
 }
 
 .nav {
@@ -55,19 +55,19 @@ body {
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   text-decoration: none;
   transition: color 0.15s;
 }
 
 .nav a:hover {
-  color: #fff;
+  color: #111;
 }
 
 /* ── HERO ── */
 .hero {
   padding: clamp(16px, 2.5vw, 32px) clamp(20px, 3.5vw, 52px) clamp(12px, 2vw, 24px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
 
@@ -76,7 +76,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #e8272a;
+  color: #c0392b;
   margin-bottom: clamp(6px, 1vw, 12px);
 }
 
@@ -87,14 +87,14 @@ body {
   line-height: 0.88;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: #fff;
+  color: #111;
   display: flex;
   flex-direction: column;
 }
 
 .hero-title-indent {
   padding-left: clamp(40px, 8vw, 120px);
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(0, 0, 0, 0.18);
 }
 
 /* ── GRID ── */
@@ -112,7 +112,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: clamp(16px, 2.5vw, 28px);
-  border: 1px solid transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-width: 0 1px 1px 0;
   position: relative;
   overflow: hidden;
@@ -121,7 +121,7 @@ body {
 }
 
 .tile:hover {
-  background: rgba(255, 255, 255, 0.03) !important;
+  filter: brightness(0.97);
 }
 
 .tile:nth-child(2),
@@ -154,7 +154,7 @@ body {
   line-height: 0.9;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: #fff;
+  color: #111;
 }
 
 .tile-desc {
@@ -162,5 +162,5 @@ body {
   font-weight: 400;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(0, 0, 0, 0.35);
 }

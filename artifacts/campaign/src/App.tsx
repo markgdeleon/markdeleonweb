@@ -3,33 +3,29 @@ const tiles = [
     client: "SAN DIEGO PADRES",
     headline: "SOCIAL\nCONTENT\nSYSTEM",
     desc: "Carousels · Reels · Branded Graphics",
-    bg: "#0f0505",
+    bg: "#ede8e3",
     accent: "#c8102e",
-    border: "rgba(200,16,46,0.25)",
   },
   {
     client: "MTV",
     headline: "CAMPAIGN\nDIRECTION",
     desc: "Social-First Video · Brand Assets",
-    bg: "#0a0a0a",
-    accent: "#ffffff",
-    border: "rgba(255,255,255,0.12)",
+    bg: "#f0ede8",
+    accent: "#111111",
   },
   {
     client: "HP",
     headline: "BRAND\nCAMPAIGN",
     desc: "Content Systems · Platform Delivery",
-    bg: "#040810",
-    accent: "#0096d6",
-    border: "rgba(0,150,214,0.2)",
+    bg: "#eaeef2",
+    accent: "#0069b4",
   },
   {
     client: "META",
     headline: "VETERAN\nCAMPAIGNS",
     desc: "Social Video · National Reach",
-    bg: "#040610",
+    bg: "#eceef5",
     accent: "#1877f2",
-    border: "rgba(24,119,242,0.2)",
   },
 ];
 
@@ -58,22 +54,13 @@ export default function App() {
           <div
             key={tile.client}
             className="tile"
-            style={{
-              background: tile.bg,
-              borderColor: tile.border,
-            }}
+            style={{ background: tile.bg }}
           >
-            <span
-              className="tile-client"
-              style={{ color: tile.accent }}
-            >
+            <span className="tile-client" style={{ color: tile.accent }}>
               {tile.client}
             </span>
             <div className="tile-body">
-              <h2
-                className="tile-headline"
-                style={{ whiteSpace: "pre-line" }}
-              >
+              <h2 className="tile-headline" style={{ whiteSpace: "pre-line" }}>
                 {tile.headline}
               </h2>
               <p className="tile-desc">{tile.desc}</p>
