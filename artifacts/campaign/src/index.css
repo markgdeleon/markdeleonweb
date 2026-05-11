@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Space+Grotesk:wght@300;400;500;600&display=swap');
 
 * {
   margin: 0;
@@ -13,70 +13,140 @@ html, body, #root {
 
 body {
   font-family: 'Space Grotesk', system-ui, sans-serif;
-  background: #0a1a0f;
+  background: #080808;
   color: #fff;
   overflow: hidden;
 }
 
+/* ── PAGE ── */
 .page {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
 }
 
-.bg-image {
-  position: absolute;
-  inset: 0;
+/* ── HEADER ── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(20px, 3vw, 36px) clamp(24px, 4vw, 56px);
+  position: relative;
+  z-index: 10;
+}
+
+.wordmark {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(10px, 1vw, 13px);
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  gap: clamp(20px, 3vw, 40px);
+}
+
+.nav a {
+  font-size: clamp(10px, 1vw, 12px);
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+/* ── MAIN ── */
+.main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+/* ── TEXT COLUMN ── */
+.text-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(32px, 5vw, 72px) clamp(24px, 4vw, 56px);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: clamp(72px, 12vw, 160px);
+  line-height: 0.9;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: clamp(20px, 3vw, 40px);
+}
+
+.rule {
+  width: 40px;
+  height: 3px;
+  background: #e8272a;
+  margin-bottom: clamp(16px, 2.5vw, 28px);
+}
+
+.role {
+  font-size: clamp(10px, 1.1vw, 13px);
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #e8272a;
+  margin-bottom: clamp(10px, 1.5vw, 16px);
+}
+
+.clients {
+  font-size: clamp(9px, 0.9vw, 11px);
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ── IMAGE COLUMN ── */
+.image-col {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-col img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   display: block;
+  filter: grayscale(20%) contrast(1.05);
 }
 
-.overlay {
+.image-label {
   position: absolute;
-  inset: 0;
-  padding: clamp(16px, 3vw, 36px);
+  bottom: clamp(20px, 3vw, 36px);
+  left: clamp(20px, 3vw, 36px);
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* TOP ROW */
-.top-left,
-.top-right {
-  position: absolute;
-  top: clamp(16px, 3vw, 36px);
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  font-size: clamp(9px, 1vw, 12px);
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(8px, 0.85vw, 11px);
   font-weight: 500;
-  letter-spacing: 0.12em;
-  line-height: 1.3;
-  color: #fff;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
 }
 
-.top-left { left: clamp(16px, 3vw, 36px); }
-
-.top-right {
-  right: clamp(16px, 3vw, 36px);
-  flex-direction: row;
-  gap: clamp(16px, 2.5vw, 32px);
-}
-
-.top-right a {
-  color: #fff;
-  text-decoration: none;
-  font-size: clamp(9px, 1vw, 12px);
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  opacity: 0.85;
-}
-
-.top-right a:hover {
-  opacity: 1;
+.label-sep {
+  opacity: 0.4;
 }
