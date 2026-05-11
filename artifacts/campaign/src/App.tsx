@@ -1,4 +1,37 @@
-import portraitImage from "@assets/Screenshot_2026-05-10_at_4.30.08_PM_1778456761454.png";
+const tiles = [
+  {
+    client: "SAN DIEGO PADRES",
+    headline: "SOCIAL\nCONTENT\nSYSTEM",
+    desc: "Carousels · Reels · Branded Graphics",
+    bg: "#0f0505",
+    accent: "#c8102e",
+    border: "rgba(200,16,46,0.25)",
+  },
+  {
+    client: "MTV",
+    headline: "CAMPAIGN\nDIRECTION",
+    desc: "Social-First Video · Brand Assets",
+    bg: "#0a0a0a",
+    accent: "#ffffff",
+    border: "rgba(255,255,255,0.12)",
+  },
+  {
+    client: "HP",
+    headline: "BRAND\nCAMPAIGN",
+    desc: "Content Systems · Platform Delivery",
+    bg: "#040810",
+    accent: "#0096d6",
+    border: "rgba(0,150,214,0.2)",
+  },
+  {
+    client: "META",
+    headline: "VETERAN\nCAMPAIGNS",
+    desc: "Social Video · National Reach",
+    bg: "#040610",
+    accent: "#1877f2",
+    border: "rgba(24,119,242,0.2)",
+  },
+];
 
 export default function App() {
   return (
@@ -12,26 +45,42 @@ export default function App() {
         </nav>
       </header>
 
-      <main className="main">
-        <div className="text-col">
-          <h1 className="name">
-            <span>MARK</span>
-            <span>DE LEON</span>
-          </h1>
-          <div className="rule" />
-          <p className="role">CREATIVE PRODUCER</p>
-          <p className="clients">PADRES&nbsp;&nbsp;·&nbsp;&nbsp;MTV&nbsp;&nbsp;·&nbsp;&nbsp;HP&nbsp;&nbsp;·&nbsp;&nbsp;META</p>
-        </div>
+      <section className="hero">
+        <p className="hero-eyebrow">CREATIVE PRODUCER · LOS ANGELES</p>
+        <h1 className="hero-title">
+          <span>CAMPAIGN</span>
+          <span className="hero-title-indent">DIRECTION</span>
+        </h1>
+      </section>
 
-        <div className="image-col">
-          <img src={portraitImage} alt="Mark De Leon" />
-          <div className="image-label">
-            <span>CONTENT SYSTEMS</span>
-            <span className="label-sep">/</span>
-            <span>CAMPAIGN DIRECTION</span>
+      <div className="grid">
+        {tiles.map((tile) => (
+          <div
+            key={tile.client}
+            className="tile"
+            style={{
+              background: tile.bg,
+              borderColor: tile.border,
+            }}
+          >
+            <span
+              className="tile-client"
+              style={{ color: tile.accent }}
+            >
+              {tile.client}
+            </span>
+            <div className="tile-body">
+              <h2
+                className="tile-headline"
+                style={{ whiteSpace: "pre-line" }}
+              >
+                {tile.headline}
+              </h2>
+              <p className="tile-desc">{tile.desc}</p>
+            </div>
           </div>
-        </div>
-      </main>
+        ))}
+      </div>
     </div>
   );
 }
