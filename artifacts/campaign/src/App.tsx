@@ -6,33 +6,29 @@ const tiles = [
     id: "hp",
     client: "HP",
     label: "Brand Campaign",
-    index: "01",
-    bg: "#e4e8ec",
-    videoUrl: "https://www.youtube.com/embed/x8_-Wg6ue9E",
+    thumbnail: "https://img.youtube.com/vi/x8_-Wg6ue9E/maxresdefault.jpg",
+    videoUrl: "https://www.youtube.com/embed/x8_-Wg6ue9E?autoplay=1",
   },
   {
     id: "national-university",
     client: "NATIONAL UNIVERSITY",
     label: "Enrollment Campaign",
-    index: "02",
-    bg: "#eceae6",
-    videoUrl: "https://www.youtube.com/embed/Lme_yYmUZu0",
+    thumbnail: "https://img.youtube.com/vi/Lme_yYmUZu0/maxresdefault.jpg",
+    videoUrl: "https://www.youtube.com/embed/Lme_yYmUZu0?autoplay=1",
   },
   {
     id: "illumina",
     client: "ILLUMINA",
     label: "Documentary Content",
-    index: "03",
-    bg: "#e6ece8",
-    videoUrl: "https://www.youtube.com/embed/pJYNI3lifGA",
+    thumbnail: "https://img.youtube.com/vi/pJYNI3lifGA/maxresdefault.jpg",
+    videoUrl: "https://www.youtube.com/embed/pJYNI3lifGA?autoplay=1",
   },
   {
     id: "sdge",
     client: "SDG&E",
     label: "Brand Storytelling",
-    index: "04",
-    bg: "#ece6e4",
-    videoUrl: "https://www.youtube.com/embed/70iXMmhsAJ8",
+    thumbnail: "https://img.youtube.com/vi/70iXMmhsAJ8/maxresdefault.jpg",
+    videoUrl: "https://www.youtube.com/embed/70iXMmhsAJ8?autoplay=1",
   },
 ];
 
@@ -61,14 +57,22 @@ export default function App() {
           <button
             key={tile.id}
             className="tile"
-            style={{ background: tile.bg }}
             onClick={() => setActive(tile)}
             aria-label={`View ${tile.client} work`}
           >
-            <span className="tile-index">{tile.index}</span>
-            <div className="tile-footer">
-              <span className="tile-client">{tile.client}</span>
+            <img
+              src={tile.thumbnail}
+              alt={tile.client}
+              className="tile-image"
+            />
+            <div className="tile-overlay">
               <span className="tile-label">{tile.label}</span>
+              <span className="tile-client">{tile.client}</span>
+            </div>
+            <div className="tile-play">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
             </div>
           </button>
         ))}

@@ -34,25 +34,16 @@ export default function Modal({ client, videoUrl, onClose }: ModalProps) {
         <div className="modal-header">
           <span className="modal-title">{client}</span>
           <button className="modal-close" onClick={onClose} aria-label="Close">
-            ✕
+            CLOSE
           </button>
         </div>
-
         <div className="modal-player">
-          {videoUrl ? (
-            <iframe
-              src={videoUrl}
-              title={client}
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-            />
-          ) : (
-            <div className="modal-placeholder">
-              <span className="modal-placeholder-label">VIDEO COMING SOON</span>
-              <span className="modal-placeholder-client">{client}</span>
-            </div>
-          )}
+          <iframe
+            src={videoUrl}
+            title={client}
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          />
         </div>
       </div>
     </div>
