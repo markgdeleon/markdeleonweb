@@ -8,7 +8,7 @@ const tiles = [
     label: "Brand Campaign",
     index: "01",
     bg: "#e4e8ec",
-    videoUrl: "",
+    videoUrl: "https://www.youtube.com/embed/x8_-Wg6ue9E",
   },
   {
     id: "national-university",
@@ -16,7 +16,7 @@ const tiles = [
     label: "Enrollment Campaign",
     index: "02",
     bg: "#eceae6",
-    videoUrl: "",
+    videoUrl: "https://www.youtube.com/embed/Lme_yYmUZu0",
   },
   {
     id: "illumina",
@@ -24,7 +24,7 @@ const tiles = [
     label: "Documentary Content",
     index: "03",
     bg: "#e6ece8",
-    videoUrl: "",
+    videoUrl: "https://www.youtube.com/embed/pJYNI3lifGA",
   },
   {
     id: "sdge",
@@ -32,7 +32,7 @@ const tiles = [
     label: "Brand Storytelling",
     index: "04",
     bg: "#ece6e4",
-    videoUrl: "",
+    videoUrl: "https://www.youtube.com/embed/70iXMmhsAJ8",
   },
 ];
 
