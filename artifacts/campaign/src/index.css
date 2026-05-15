@@ -570,3 +570,151 @@ body {
   height: 100%;
   border: none;
 }
+
+/* ════════════════════════════════════════
+   MOBILE RESPONSIVE  (≤ 768 px)
+   ════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* Allow pages to scroll vertically on mobile */
+  .content {
+    overflow-y: auto;
+  }
+
+  /* ── WORK PAGE – tile crop fixes ── */
+
+  /* HP tile (1st) — shift crop up to center the subject */
+  .tile:nth-child(1) .tile-image {
+    object-position: 62% 20%;
+  }
+
+  /* Illumina tile (3rd) — shift left to center the woman */
+  .tile:nth-child(3) .tile-image {
+    object-position: 22% 38%;
+  }
+
+  /* Tile label always visible on mobile (no hover) */
+  .tile-label {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Play icon always visible on mobile */
+  .tile-play {
+    opacity: 0.75;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  /* ── ABOUT PAGE – stacked layout ── */
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    height: auto;
+    min-height: 100%;
+  }
+
+  .about-image-col {
+    flex-shrink: 0;
+    height: 54vw;          /* cinematic, not too tall */
+    min-height: 200px;
+    max-height: 300px;
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    position: relative;
+  }
+
+  .about-portrait {
+    transform: scale(1.08);
+    transform-origin: 48% 22%;
+    object-position: 48% 22%;
+  }
+
+  .about-text-col {
+    flex: 1;
+    overflow-y: visible;
+    justify-content: flex-start;
+    padding: 28px 20px 48px;
+  }
+
+  .about-name {
+    font-size: clamp(34px, 10vw, 52px);
+    margin-bottom: 18px;
+  }
+
+  .about-bio {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  /* ── CONTACT PAGE – stacked layout ── */
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    height: auto;
+    min-height: 100%;
+  }
+
+  .contact-intro-col {
+    flex-shrink: 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    padding: 32px 20px 24px;
+    justify-content: flex-start;
+    background: transparent;
+  }
+
+  .contact-heading {
+    font-size: clamp(44px, 13vw, 68px);
+    margin-bottom: 12px;
+  }
+
+  .contact-subtext {
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .contact-form-col {
+    flex: 1;
+    align-items: flex-start;
+    overflow-y: visible;
+  }
+
+  .contact-form-inner {
+    padding: 28px 20px 48px;
+    width: 100%;
+  }
+
+  .contact-form {
+    max-width: 100%;
+    gap: 22px;
+  }
+
+  .btn-solid {
+    width: 100%;
+    text-align: center;
+    padding: 14px 24px;
+  }
+
+  /* ── HEADER on narrow screens ── */
+  .wordmark {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+  }
+
+  .nav {
+    gap: 16px;
+  }
+
+  .nav button {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+  }
+
+  /* ── FOOTER ── */
+  .site-footer {
+    height: 36px;
+  }
+}

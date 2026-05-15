@@ -1,0 +1,109 @@
+Please make the following MOBILE VIEW refinements only.
+
+IMPORTANT:
+These changes are specifically for the mobile layout and responsiveness.
+Do not redesign the desktop version.
+
+SELECTED WORK PAGE — MOBILE FIXES
+
+The National University and SDG&E tiles are properly centered already.
+
+However:
+
+* HP tile is not centered correctly
+* Illumina tile is not centered correctly
+
+Please adjust the mobile crop/positioning so that:
+
+* the main subject/person is visible and centered
+* the composition feels intentional and cinematic
+* important visual elements are not cut off awkwardly
+
+HP TILE:
+
+* center the subject properly
+* ensure the face/person is visible in mobile crop
+* maintain balanced framing
+
+ILLUMINA TILE:
+
+* center the subject properly
+* ensure the face/person remains visible in mobile crop
+* maintain cinematic composition
+
+Do NOT change:
+
+* National University tile
+* SDG&E tile
+
+Those are already working well.
+
+ABOUT PAGE — MOBILE LAYOUT REFINEMENT
+
+Current issue:
+
+* the image is too tall vertically on mobile
+* the layout feels stretched and unbalanced
+* too much scrolling before reaching the text
+
+Please redesign ONLY the mobile About layout to feel more editorial and balanced.
+
+Preferred mobile structure:
+
+* image on top
+* text below
+* “Download Resume” button directly underneath the image or between image/text depending on spacing
+
+The image should:
+
+* appear shorter in height
+* feel more cinematic and intentional
+* avoid overly tall portrait framing
+* maintain clean spacing and alignment
+
+Overall mobile About page should feel:
+
+* modern
+* editorial
+* cinematic
+* clean
+* balanced for phone viewing
+
+CONTACT PAGE — MOBILE LAYOUT REFINEMENT
+
+Current issue:
+
+* left/right split layout does not translate well on mobile
+* too much empty vertical space
+
+Please restructure the mobile Contact page to:
+
+TOP:
+
+* “Let’s Work Together”
+* supporting contact text
+
+BOTTOM:
+
+* Name field
+* Email field
+* Message field
+* Send Message button
+
+Everything should stack vertically in a clean centered layout optimized for phones.
+
+The mobile Contact page should feel:
+
+* intentional
+* clean
+* editorial
+* easy to read
+* minimal
+* not template-like
+
+Maintain:
+
+* cream/off-white aesthetic
+* typography
+* cinematic/editorial visual tone
+* current branding and spacing style
