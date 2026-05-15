@@ -583,9 +583,9 @@ body {
 
   /* ── WORK PAGE – tile crop fixes ── */
 
-  /* HP tile (1st) — shift crop up to center the subject */
+  /* HP tile (1st) — shift right to show full face */
   .tile:nth-child(1) .tile-image {
-    object-position: 62% 20%;
+    object-position: 82% 22%;
   }
 
   /* Illumina tile (3rd) — shift left to center the woman */
@@ -605,37 +605,24 @@ body {
     transform: translate(-50%, -50%) scale(1);
   }
 
-  /* ── ABOUT PAGE – stacked layout ── */
+  /* ── ABOUT PAGE – text only on mobile ── */
   .about-page {
-    display: flex;
-    flex-direction: column;
-    overflow: visible;
+    display: block;
+    overflow-y: auto;
     height: auto;
     min-height: 100%;
   }
 
   .about-image-col {
-    flex-shrink: 0;
-    height: 54vw;          /* cinematic, not too tall */
-    min-height: 200px;
-    max-height: 300px;
-    border-right: none;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    width: 100%;
-    position: relative;
-  }
-
-  .about-portrait {
-    transform: scale(1.08);
-    transform-origin: 48% 22%;
-    object-position: 48% 22%;
+    display: none;
   }
 
   .about-text-col {
-    flex: 1;
+    width: 100%;
     overflow-y: visible;
     justify-content: flex-start;
-    padding: 28px 20px 48px;
+    padding: 36px 24px 56px;
+    border-right: none;
   }
 
   .about-name {
@@ -696,6 +683,18 @@ body {
     width: 100%;
     text-align: center;
     padding: 14px 24px;
+  }
+
+  /* ── WORK DESCRIPTOR – single line on mobile ── */
+  .work-descriptor {
+    padding: 0 14px;
+    height: 40px;
+  }
+
+  .hero-descriptor {
+    font-size: 13px;
+    letter-spacing: 0.015em;
+    white-space: nowrap;
   }
 
   /* ── HEADER on narrow screens ── */
