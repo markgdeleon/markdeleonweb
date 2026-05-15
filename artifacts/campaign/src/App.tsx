@@ -2,6 +2,7 @@ import { useState } from "react";
 import Work from "./Work";
 import About from "./About";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 export type Page = "work" | "about" | "contact";
 
@@ -43,6 +44,8 @@ export default function App() {
         {page === "about"   && <About />}
         {page === "contact" && <Contact />}
       </main>
+
+      <Footer />
     </div>
   );
 }

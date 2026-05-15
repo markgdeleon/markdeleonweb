@@ -1,0 +1,125 @@
+Bro honestly? I would NOT do the San Diego map.
+
+That immediately pushes the site toward:
+
+agency/contact-template website.
+
+And your site is finally feeling:
+
+* editorial
+* cinematic
+* human-centered
+* premium
+
+A map kinda breaks that illusion 😭
+
+I think the better move is:
+
+BTS / documentary still / operational image.
+
+Something:
+
+* camera in hand
+* interview setup
+* on-location moment
+* production environment
+* silhouette
+* field setup
+* natural candid
+
+That reinforces:
+
+“this is a working creative producer.”
+
+WAY stronger than:
+
+generic map embed.
+
+Especially for:
+
+* HavocAI
+* Amazon
+* AWS
+* innovation storytelling
+
+Because the site’s whole strength now is:
+
+immersion + identity.
+
+Not:
+
+local business contact page.
+
+And yes bro — absolutely make the form route to:
+mark@markdellion.com
+
+Especially if you’re eventually deploying through Netlify.
+
+Use this:
+
+Please make the following final updates to the website.
+
+FOOTER
+Add the footer consistently across ALL pages:
+
+* Selected Work
+* About
+* Contact
+
+Footer text:
+© 2026 Mark De Leon. All rights reserved.
+
+Style:
+
+* subtle
+* minimal
+* editorial
+* clean
+* cinematic
+* consistent with current typography and spacing
+
+Do not let any page end abruptly without the footer.
+
+CONTACT PAGE UPDATE
+Remove the generic map/location-style contact template.
+
+Instead of a map, use:
+
+* a cinematic behind-the-scenes image
+* documentary-style production still
+* operational/creative environment photo
+* interview setup or field-production imagery
+
+The contact page should continue feeling:
+
+* immersive
+* human-centered
+* editorial
+* cinematic
+* story-driven
+
+Avoid:
+
+* generic agency contact layouts
+* Google Maps embeds
+* corporate office aesthetics
+
+CONTACT FORM FUNCTIONALITY
+Configure the contact form so submissions are routed to:
+
+mark@markdeleon.com
+
+I understand deployment and final email handling may later be connected through Netlify.
+
+For now:
+
+* structure the form properly
+* prepare it for Netlify form handling or email forwarding integration
+* ensure the submit functionality is ready for future deployment setup
+
+Maintain the current:
+
+* cream/off-white aesthetic
+* typography
+* documentary/editorial visual tone
+* clean minimal layout
