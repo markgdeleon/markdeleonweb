@@ -1,0 +1,101 @@
+Update the portfolio website with the following changes:
+
+GLOBAL STYLE / DIRECTION
+
+* Keep the current off-white / cream aesthetic.
+* Maintain a clean, modern, editorial feel similar to a branded documentary or creative producer portfolio.
+* Minimal and refined layout.
+* Avoid clutter and excessive text.
+* Keep smooth transitions and subtle motion only.
+
+HEADER / NAVIGATION
+
+* Top left: keep the name “Mark De Leon”
+* Top right navigation:
+    * Change “Work” to “Selected Work”
+    * Keep “About”
+    * Keep “Contact”
+
+HERO SECTION
+
+* Replace the current title/subtitle with:
+
+Creative Producer | Storytelling | Content Production
+
+* Keep the hero section minimal and modern.
+* No extra buzzwords or marketing-heavy language.
+
+REMOVE THE FOLLOWING SECTIONS / TERMS COMPLETELY
+Remove:
+
+* Los Angeles
+* Campaign Direction
+* Social Content Systems
+* Carousels
+* Reels
+* Branded Graphics
+* Social First Video
+* Brand Assets
+* Content Systems
+* Platform Delivery
+* Brand Campaign
+* Veteran Campaign
+* Social Video
+* National Reach
+
+SELECTED WORK SECTION
+Replace the current tiles/cards with ONLY 4 featured work tiles:
+
+1. HP
+2. National University
+3. Illumina
+4. SDG&E
+
+DESIGN DIRECTION FOR THE TILES
+
+* Large cinematic thumbnail cards
+* Clean hover animation
+* Minimal text overlay
+* Editorial / documentary aesthetic
+* Modern branded storytelling feel
+* Responsive layout for desktop and mobile
+
+VIDEO FUNCTIONALITY
+I will provide video links later.
+
+IMPORTANT:
+
+* When a user clicks a tile, DO NOT navigate to another page.
+* The video should open directly on the same page.
+* Preferred behavior:
+    * modal/lightbox popup
+    * embedded player overlay
+    * smooth fade-in transition
+* Keep the user on the portfolio page at all times.
+
+VIDEO PRESENTATION
+
+* Videos should feel immersive and cinematic.
+* Prioritize a clean viewing experience.
+* Include:
+    * close button
+    * muted autoplay optional
+    * responsive scaling
+    * subtle dark overlay background
+
+OVERALL WEBSITE FEEL
+The website should feel like:
+
+* a modern creative producer portfolio
+* branded documentary storytelling
+* editorial and cinematic
+* clean and confident
+* similar to modern innovation/technology storytelling studios
+
+Avoid:
+
+* overly corporate layouts
+* flashy agency gimmicks
+* excessive text blocks
+* generic freelancer portfolio feel
+* over-designed animations

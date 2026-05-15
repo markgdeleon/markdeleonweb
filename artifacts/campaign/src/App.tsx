@@ -1,73 +1,86 @@
+import { useState } from "react";
+import Modal from "./Modal";
+
 const tiles = [
   {
-    client: "SAN DIEGO PADRES",
-    headline: "SOCIAL\nCONTENT\nSYSTEM",
-    desc: "Carousels · Reels · Branded Graphics",
-    bg: "#ede8e3",
-    accent: "#c8102e",
-  },
-  {
-    client: "MTV",
-    headline: "CAMPAIGN\nDIRECTION",
-    desc: "Social-First Video · Brand Assets",
-    bg: "#f0ede8",
-    accent: "#111111",
-  },
-  {
+    id: "hp",
     client: "HP",
-    headline: "BRAND\nCAMPAIGN",
-    desc: "Content Systems · Platform Delivery",
-    bg: "#eaeef2",
-    accent: "#0069b4",
+    label: "Brand Campaign",
+    index: "01",
+    bg: "#e4e8ec",
+    videoUrl: "",
   },
   {
-    client: "META",
-    headline: "VETERAN\nCAMPAIGNS",
-    desc: "Social Video · National Reach",
-    bg: "#eceef5",
-    accent: "#1877f2",
+    id: "national-university",
+    client: "NATIONAL UNIVERSITY",
+    label: "Enrollment Campaign",
+    index: "02",
+    bg: "#eceae6",
+    videoUrl: "",
+  },
+  {
+    id: "illumina",
+    client: "ILLUMINA",
+    label: "Documentary Content",
+    index: "03",
+    bg: "#e6ece8",
+    videoUrl: "",
+  },
+  {
+    id: "sdge",
+    client: "SDG&E",
+    label: "Brand Storytelling",
+    index: "04",
+    bg: "#ece6e4",
+    videoUrl: "",
   },
 ];
 
 export default function App() {
+  const [active, setActive] = useState<(typeof tiles)[0] | null>(null);
+
   return (
     <div className="page">
       <header className="header">
         <span className="wordmark">MARK DE LEON</span>
         <nav className="nav">
-          <a href="#work">WORK</a>
+          <a href="#work">SELECTED WORK</a>
           <a href="#about">ABOUT</a>
           <a href="#contact">CONTACT</a>
         </nav>
       </header>
 
       <section className="hero">
-        <p className="hero-eyebrow">CREATIVE PRODUCER · LOS ANGELES</p>
-        <h1 className="hero-title">
-          <span>CAMPAIGN</span>
-          <span className="hero-title-indent">DIRECTION</span>
-        </h1>
+        <p className="hero-descriptor">
+          Creative Producer&nbsp;&nbsp;·&nbsp;&nbsp;Storytelling&nbsp;&nbsp;·&nbsp;&nbsp;Content Production
+        </p>
       </section>
 
-      <div className="grid">
+      <div className="grid" id="work">
         {tiles.map((tile) => (
-          <div
-            key={tile.client}
+          <button
+            key={tile.id}
             className="tile"
             style={{ background: tile.bg }}
+            onClick={() => setActive(tile)}
+            aria-label={`View ${tile.client} work`}
           >
-            <span className="tile-client" style={{ color: tile.accent }}>
-              {tile.client}
-            </span>
-            <div className="tile-body">
-              <h2 className="tile-headline" style={{ whiteSpace: "pre-line" }}>
-                {tile.headline}
-              </h2>
-              <p className="tile-desc">{tile.desc}</p>
+            <span className="tile-index">{tile.index}</span>
+            <div className="tile-footer">
+              <span className="tile-client">{tile.client}</span>
+              <span className="tile-label">{tile.label}</span>
             </div>
-          </div>
+          </button>
         ))}
       </div>
+
+      {active && (
+        <Modal
+          client={active.client}
+          videoUrl={active.videoUrl}
+          onClose={() => setActive(null)}
+        />
+      )}
     </div>
   );
 }
