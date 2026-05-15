@@ -1,4 +1,5 @@
 import { useState } from "react";
+import btsPhoto from "@assets/Screenshot_2026-05-15_at_12.20.50_AM_1778829696732.png";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -34,8 +35,8 @@ export default function Contact() {
       <div className="contact-image-col">
         <img
           className="contact-bts-image"
-          src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=900&q=80&fit=crop"
-          alt="Behind the scenes — production environment"
+          src={btsPhoto}
+          alt="Mark De Leon — on set, production"
         />
         <div className="contact-image-caption">
           <p className="eyebrow" style={{ color: "rgba(255,255,255,0.45)" }}>MARK DE LEON</p>

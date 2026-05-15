@@ -1,10 +1,16 @@
+import portrait from "@assets/Screenshot_2026-05-15_at_12.19.12_AM_1778829570493.png";
+
+const resumeUrl = `${import.meta.env.BASE_URL}MarkDeLeon_CreativeProducer.pdf`;
+
 export default function About() {
   return (
     <div className="about-page">
       <div className="about-image-col">
-        <div className="about-image-placeholder">
-          <span className="placeholder-label">PORTRAIT</span>
-        </div>
+        <img
+          className="about-portrait"
+          src={portrait}
+          alt="Mark De Leon — Creative Producer"
+        />
       </div>
 
       <div className="about-text-col">
@@ -28,8 +34,10 @@ export default function About() {
         </p>
         <a
           className="btn-outline"
-          href="#"
-          onClick={(e) => e.preventDefault()}
+          href={resumeUrl}
+          download="MarkDeLeon_CreativeProducer.pdf"
+          target="_blank"
+          rel="noreferrer"
         >
           DOWNLOAD RESUME
         </a>
