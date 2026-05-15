@@ -266,10 +266,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 22%;
+  object-position: 48% 28%;
   display: block;
-  transform: scale(1.07);
-  transform-origin: center 22%;
+  transform: scale(1.1);
+  transform-origin: 48% 28%;
 }
 
 .about-text-col {
@@ -320,48 +320,36 @@ body {
 .contact-page {
   flex: 1;
   display: grid;
-  grid-template-columns: 0.78fr 1.3fr;
+  grid-template-columns: 1fr 1.4fr;
   overflow: hidden;
   min-height: 0;
 }
 
-.contact-image-col {
-  position: relative;
-  overflow: hidden;
+.contact-intro-col {
   border-right: 1px solid rgba(0,0,0,0.08);
-  background: #111;
+  padding: clamp(40px, 6vw, 80px) clamp(24px, 4vw, 56px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.contact-bts-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 52% 28%;
-  display: block;
-  transform: scale(1.12);
-  transform-origin: 52% 28%;
-  filter: brightness(0.72) saturate(0.78);
-}
-
-.contact-image-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 36px clamp(16px, 2.5vw, 28px) clamp(16px, 2.5vw, 24px);
-  background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 100%);
-}
-
-.contact-image-label {
+.contact-heading {
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 500;
-  font-size: clamp(12px, 1.4vw, 16px);
-  letter-spacing: 0.12em;
+  font-weight: 600;
+  font-size: clamp(48px, 6.5vw, 88px);
+  line-height: 0.88;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.55);
-  margin-top: 3px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.contact-subtext {
+  font-size: clamp(12px, 1.2vw, 14px);
+  font-weight: 400;
+  line-height: 1.75;
+  color: rgba(0,0,0,0.48);
+  max-width: 280px;
 }
 
 .contact-form-col {
@@ -372,27 +360,7 @@ body {
 
 .contact-form-inner {
   width: 100%;
-  padding: clamp(32px, 5vw, 64px) clamp(24px, 4vw, 52px);
-}
-
-.contact-heading {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 600;
-  font-size: clamp(40px, 5.5vw, 76px);
-  line-height: 0.9;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  color: #111;
-  margin-bottom: 16px;
-}
-
-.contact-subtext {
-  font-size: clamp(12px, 1.2vw, 14px);
-  font-weight: 400;
-  line-height: 1.7;
-  color: rgba(0,0,0,0.5);
-  margin-bottom: 32px;
-  max-width: 340px;
+  padding: clamp(40px, 6vw, 80px) clamp(28px, 4.5vw, 64px);
 }
 
 /* ── FORM ── */
