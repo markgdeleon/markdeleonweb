@@ -1,6 +1,6 @@
 [build]
   base    = "."
-  command = "npm install -g pnpm && pnpm install --frozen-lockfile && pnpm --filter @workspace/campaign run build"
+  command = "pnpm install --frozen-lockfile && pnpm --filter @workspace/campaign run build"
   publish = "artifacts/campaign/dist/public"
 
 [[redirects]]
