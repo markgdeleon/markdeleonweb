@@ -1,0 +1,115 @@
+Yeahhh I see exactly what you mean now 😭
+
+Replit basically treated the images like:
+
+generic content blocks
+
+instead of:
+
+editorial integrated imagery.
+
+The issue isn’t the photos themselves.
+It’s:
+
+* oversized containers
+* padding imbalance
+* white framing
+* alignment
+* visual weight
+
+Especially on the About page.
+That left image is WAY too dominant right now.
+
+And the Contact image has:
+
+* too much dead gray/white space
+* weird framing
+* feels template-y
+
+The good news?
+This is SUPER fixable.
+You’re actually close now.
+
+Use this refinement prompt:
+
+Please refine the image layout and alignment on the About and Contact pages.
+
+IMPORTANT:
+Do not redesign the pages.
+These are layout refinement adjustments only.
+
+ABOUT PAGE IMAGE FIXES
+Current issues:
+
+* image is oversized
+* image container feels off-center
+* too much white border/padding
+* image visually dominates the layout
+
+Please:
+
+* center the image properly within its column
+* remove unnecessary white border/padding completely
+* reduce the image size slightly
+* give the image a more refined editorial presentation
+* maintain breathing room without oversized framing
+* align the image vertically with the text block more naturally
+
+The image should feel:
+
+* cinematic
+* understated
+* human
+* documentary/editorial
+* intentional
+
+Avoid:
+
+* oversized portrait presentation
+* generic website template framing
+* excessive white margins
+
+CONTACT PAGE IMAGE FIXES
+Current issues:
+
+* image container feels off-center
+* excessive gray/white empty space around image
+* image feels disconnected from the page
+* layout feels template-like instead of editorial
+
+Please:
+
+* reduce the image container size
+* center the image properly
+* remove unnecessary border/padding around the image
+* tighten the composition so the image integrates naturally with the contact layout
+* maintain clean spacing without oversized empty areas
+
+The image should feel:
+
+* immersive
+* behind-the-scenes
+* production-oriented
+* cinematic
+* integrated into the editorial layout
+
+OVERALL IMAGE DIRECTION
+Images across the site should feel:
+
+* naturally embedded into the design
+* not boxed/template-driven
+* modern editorial
+* restrained and premium
+
+The layout should resemble:
+
+* documentary storytelling websites
+* editorial portfolio layouts
+* modern creative producer presentation
+
+Maintain:
+
+* cream/off-white aesthetic
+* typography
+* current page structure
+* minimalist visual tone
